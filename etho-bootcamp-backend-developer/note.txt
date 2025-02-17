@@ -1,0 +1,146 @@
+git init
+git status
+
+.gitignore
+    node_modules/
+    build/
+
+git add .
+
+git commit -m "Inicializando projeto vazio com dependencias iniciais TS"
+
+git config --global user.name "jackbravo21"
+git config --global user.email "laraftoller@gmail.com"
+
+git remote add origin https://github.com/jackbravo21/bootcamp-backend.git
+
+git push
+
+//==========================================================
+
+…or create a new repository on the command line
+echo "# bootcamp-backend" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/jackbravo21/bootcamp-backend.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/jackbravo21/bootcamp-backend.git
+git branch -M main
+git push -u origin main
+
+//==========================================================
+
+- Extensao VsCode: thunder client (ja utilizo);
+
+
+{
+    adonis, koa, fastify, restfy, hapi
+}
+
+
+npm i express --save
+
+npm i @types/express                        //habilitar suporte ao typescript
+
+res.sendStatus(200).json
+
+
+git log
+
+git switch -c primeiro-server               //criar
+git switch primeiro-server                  //muda de brench
+git commit -m "Criando servidor em Express"
+git status
+git push
+
+npm install mongoose
+
+config.ts
+
+npm i @types/mongoose --save-dev
+
+*************** npm run dev 
+
+npm install bcrypt
+npm install bcryptjs
+
+npm install @types/bcryptjs --save-dev
+
+npm install jsonwebtoken
+npm install @types/jsonwebtoken --save-dev
+
+npm install dotenv
+
+npm install axios
+
+api: www.themoviedb.org
+https://api.themoviedb.org/
+API KEY - 8c9751844a68e8e7105d68bd90f6eb25
+
+const URL_MOVIES = 'https://api.themoviedb.org/3/trending/all/week?api_key=8c9751844a68e8e7105d68bd90f6eb25';
+
+const URL_CATEGORIES = 'https://api.themoviedb.org/3/genre/movie/list?api_key=8c9751844a68e8e7105d68bd90f6eb25&language=en-US';
+
+const URL_IMAGES = 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/'
+
+//link de teste:
+https://api.themoviedb.org/3/movie/597?api_key=8c9751844a68e8e7105d68bd90f6eb25&language=en-US
+
+{
+    "name": "Titanic",
+    "category": "Drama",
+    "description": "101-year-old Rose DeWitt Bukater tells the story of her life aboard the Titanic, 84 years later. A young Rose boards the ship with her mother and fiancé. Meanwhile, Jack Dawson and Fabrizio De Rossi win third-class tickets aboard the ship. Rose tells the whole story from Titanic's departure through to its death—on its first and last voyage—on April 15, 1912.",
+    "media_type": "movie",
+    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6VmFqApQRyZZzmiGOQq2C92jyvH.jpg"
+}
+
+http://localhost:5000/external/createBulk
+{
+    "filePath": "./src/movies.json"
+}
+
+CORS:
+npm install cors
+npm i @types/cors --save-dev
+
+
+- Laravel usa Singleton;
+
+SOLID:
+- Sem repetir codigo;
+- Make simple o codigo;
+- Unica responsabilidade;
+- Dividir interesses, dividir rotas, do MDV;
+
+
+- AWS:
+npm i -g serveless
+npm i -D serverless-offline                                             //trabalhar com server offline
+npm i -D serverless-plugin-typescript typescript                        //instalar o interpretador de typescript
+npm i serverless-http                                                   //para fazer requisicoes http
+bcryptjs (não pode estar nos devDependencies)
+
+- Rodar server:
+serverless offline
+
+- Realizar deploy:
+serveless deploy
+
+- Remover deploy:
+serverless remove
+
+ANY | http://localhost:3000/dev                                     
+POST | http://localhost:3000/2015-03-31/functions/app/invocations   
+ANY | http://localhost:3000/dev/{proxy*}                            
+POST | http://localhost:3000/2015-03-31/functions/app/invocations 
+
+
+
+
+
+
